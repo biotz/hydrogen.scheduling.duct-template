@@ -1,0 +1,13 @@
+{:duct.profile/base
+ {:magnet.scheduling/twarc
+  {:postgres-cfg {:host #duct/env ["POSTGRES_HOST" Str :or "postgres"]
+                  :port #duct/env ["POSTGRES_PORT" Str :or "5432"]
+                  :db #duct/env ["POSTGRES_DB" Str :or "foo"]
+                  :user #duct/env ["POSTGRES_USER" Str :or "postgres"]
+                  :password #duct/env ["POSTGRES_PASSWORD"]}
+   :scheduler-name "main-scheduler"
+   :logger #ig/ref :duct/logger}}
+ :duct.module/sql {:database-url #duct/env ["JDBC_DATABASE_URL" Str
+                                            :or "jdbc:postgresql://postgres:5432/foo?user=postgres"]}
+ :magnet.module.scheduling/twarc-pgsql {}
+ :duct.module/logging {}}

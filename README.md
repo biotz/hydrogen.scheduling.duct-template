@@ -1,10 +1,10 @@
-# hydrogen.example.duct-profile
+# hydrogen.scheduling.duct-template
 
-A sample external profile for [Duct template](https://github.com/duct-framework/duct)
+An external profile for [Duct template](https://github.com/duct-framework/duct) that injects [scheduling.twarc](https://github.com/magnetcoop/scheduling.twarc) module to your project.
 
 ## Usage
 
-`lein new duct <project name> +hydrogen.example`
+`lein new duct <project name> +hydrogen.scheduling/twarc`
 
 ## License
 

@@ -5,7 +5,7 @@
   (io/resource (str "hydrogen/scheduling/" path)))
 
 (defn twarc-profile [_]
-  {:deps '[[magnet/scheduling.twarc "0.3.0"]]
+  {:deps '[[magnet/scheduling.twarc "0.4.0"]]
    :templates {"test/{{dirs}}/test_scheduling.clj" (resource "test_scheduling.clj")}
    :config-mods [(fn [config]
                    (merge-with merge config

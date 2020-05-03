@@ -1,3 +1,5 @@
+## NOTE: This repo got deprecated. We migrated to [hydrogen.duct-template](https://github.com/magnetcoop/hydrogen.duct-template)
+
 # hydrogen.scheduling.duct-template
 
 An external profile for [Duct template](https://github.com/duct-framework/duct) that injects [scheduling.twarc](https://github.com/magnetcoop/scheduling.twarc) module to your project.
